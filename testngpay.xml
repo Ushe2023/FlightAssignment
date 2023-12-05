@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+	  <parameter name="Website" value="https://www.easemytrip.com/"></parameter>
+	  <parameter name="FromPlace" value="Kashmir"></parameter>
+	  <parameter name="FromPl" value="(//p[@id='airportSrinagar'])[1]"></parameter>
+	  
+	  <parameter name="ToPlace" value="bangalore"></parameter>
+	  <parameter name="ToPl" value="(//span[@id='spnBangalore'])[1]"></parameter>
+	  
+	  <parameter name="Date" value="24/12/2023"></parameter>
+	  <parameter name="Title1" value="Mr"></parameter>
+	  <parameter name="FirstN" value="Raju"></parameter>
+	  <parameter name="LastN" value="Ram"></parameter>
+	  <parameter name="PhoneN" value="8888888888"></parameter>
+	  <parameter name="EMail" value="abg@gmail.com"></parameter>
+	  
+    <classes>
+      <class name="com.one.pom2.Payment"/>
+    </classes>
+  </test><!-- Test -->
+</suite> <!-- Suite -->
+
+
+<!--Verify that the user is able to navigate to payment page where the payment details and Billing address is added.-->
+<!--User to select a flight from the Search Details Page, Enter Passenger Details and proceed to payment page.-->
+
