@@ -15,7 +15,7 @@ ChromeDriver myDriver;
 	{
 		this.myDriver = myDriver;
 	}
-	
+	private By Place = By.xpath("(//span[@class='ng-binding'][normalize-space(text())='Delhi - Hyderabad'])[1]");
 	private By Adult= By.id("divNoAdult");
 		
 	private By Child= By.id("divNoChild");
@@ -24,6 +24,13 @@ ChromeDriver myDriver;
 	
 //	String AdultCount = myDriver.findElement(Adult).getText();
 	
+	public String FromToPlace()
+	{
+		String ToFromPlace = myDriver.findElement(Place).getText();
+		System.out.println("Place Details: "+ToFromPlace);
+		return ToFromPlace;
+		
+	}
 	public String CheckAdult()
 	{
 		String AdultCount = myDriver.findElement(Adult).getText();

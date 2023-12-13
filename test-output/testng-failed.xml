@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.one.pom2.Payment">
+      <class name="com.one.Main.Book2">
         <methods>
+          <include name="book" invocation-numbers="0"/>
           <include name="push"/>
-          <include name="Paymentbook"/>
-          <include name="createReport"/>
+          <include name="createReports"/>
         </methods>
-      </class> <!-- com.one.pom2.Payment -->
+      </class> <!-- com.one.Main.Book2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

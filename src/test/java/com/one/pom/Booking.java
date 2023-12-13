@@ -18,10 +18,12 @@ public class Booking {
 		myDriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		System.out.println("Book click");
 	}
-		private By BookNow= By.xpath("/html/body/form/div[11]/div[7]/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[1]/div[2]/div/div[1]/button");
-		
+		private By BookNow= By.xpath("(//button[contains(@type,'button')][normalize-space()='Book Now'])[1]");
+									  
 		private By BookAdult = By.id("optadult");
-	private By BookTraveller = By.xpath("/html/body/form/div[11]/div[7]/div[1]/div[4]/div/div/div[1]/div/div[2]/div[2]/div[3]/div/i");
+	private By BookTraveller = By.id("trvSearch");
+//			By.xpath("/html/body/form/div[11]/div[7]/div[1]/div[4]/div/div/div[1]/div/div[2]/div[2]/div[3]/div/i");
+	
 										
 	private By BookChild = By.id("optChild");
 	private By BookInfant = By.id("optInfant");
